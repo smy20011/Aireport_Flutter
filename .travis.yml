@@ -1,0 +1,8 @@
+os:
+  - osx
+osx_image: xcode9.4
+before_script:
+  - git clone https://github.com/flutter/flutter.git -b beta
+  - ./flutter/bin/flutter doctor
+script:
+  - ./flutter/bin/flutter build ios --release
